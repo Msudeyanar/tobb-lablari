@@ -22,6 +22,9 @@ initial begin
     r1 = 1; r2 = 0; r3 = 1; #10
     r1 = 1; r2 = 1; r3 = 0; #10
     r1 = 1; r2 = 1; r3 = 1; #10
+
+
+    sdhjsjhdhsah
     
     $display( w1);
     $display( w2);
