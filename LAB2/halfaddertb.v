@@ -15,5 +15,4 @@ initial begin
     A = 1'b1; B = 1'b1; #10;
     $finish;
 end
-
 endmodule

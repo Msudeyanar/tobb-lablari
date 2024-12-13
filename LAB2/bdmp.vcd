@@ -1,0 +1,60 @@
+$date
+	Fri Dec 13 23:15:04 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module bit_karsilastiricitb $end
+$var wire 1 ! AkB $end
+$var wire 1 " AeB $end
+$var wire 1 # AbB $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$scope module uut $end
+$var wire 1 $ A $end
+$var wire 1 & A1 $end
+$var wire 1 ' A1nB $end
+$var wire 1 ( AXB $end
+$var wire 1 # AbB $end
+$var wire 1 " AeB $end
+$var wire 1 ! AkB $end
+$var wire 1 ) AnB1 $end
+$var wire 1 % B $end
+$var wire 1 * B1 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1*
+0)
+1(
+0'
+1&
+0%
+0$
+0#
+1"
+0!
+$end
+#10
+0(
+0"
+0*
+1!
+1'
+1%
+#20
+1(
+1"
+0!
+0'
+0&
+1$
+#40

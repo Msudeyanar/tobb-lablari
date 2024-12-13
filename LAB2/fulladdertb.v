@@ -24,7 +24,7 @@ initial begin
     r1 = 1; r2 = 1; r3 = 1; #10
 
 
-    sdhjsjhdhsah
+
     
     $display( w1);
     $display( w2);

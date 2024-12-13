@@ -1,0 +1,39 @@
+#! /opt/homebrew/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x120705570 .scope module, "bit_karsilastirici" "bit_karsilastirici" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "AkB";
+    .port_info 3 /OUTPUT 1 "AeB";
+    .port_info 4 /OUTPUT 1 "AbB";
+o0x118008010 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x120715df0 .functor NOT 1, o0x118008010, C4<0>, C4<0>, C4<0>;
+o0x118008160 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x120715e60 .functor NOT 1, o0x118008160, C4<0>, C4<0>, C4<0>;
+L_0x120715f10 .functor AND 1, L_0x120715df0, o0x118008160, C4<1>, C4<1>;
+L_0x120716040 .functor AND 1, o0x118008010, L_0x120715e60, C4<1>, C4<1>;
+L_0x120716150 .functor NOR 1, L_0x120715f10, L_0x120716040, C4<0>, C4<0>;
+v0x120705790_0 .net "A", 0 0, o0x118008010;  0 drivers
+v0x1207157e0_0 .net "A1", 0 0, L_0x120715df0;  1 drivers
+v0x120715880_0 .net "A1nB", 0 0, L_0x120715f10;  1 drivers
+o0x1180080a0 .functor BUFZ 1, C4<z>; HiZ drive
+v0x120715910_0 .net "AbB", 0 0, o0x1180080a0;  0 drivers
+v0x1207159b0_0 .net "AeB", 0 0, L_0x120716150;  1 drivers
+o0x118008100 .functor BUFZ 1, C4<z>; HiZ drive
+v0x120715a90_0 .net "AkB", 0 0, o0x118008100;  0 drivers
+v0x120715b30_0 .net "AnB1", 0 0, L_0x120716040;  1 drivers
+v0x120715bd0_0 .net "B", 0 0, o0x118008160;  0 drivers
+v0x120715c70_0 .net "B1", 0 0, L_0x120715e60;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "bit_karsilastirici.v";
