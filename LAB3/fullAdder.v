@@ -1,20 +1,26 @@
 module fullAdder (
-   input A,B,Cin,
-   output S,Cout
+    input A, B, Cin,        // Girişler
+    output S, Cout          // Çıkışlar
 );
 
-halfAdder h0(
-   A,
-   B,
-   AxB,
-   AnB2
-);
-halfAdder h1(
-   A,
-   Cin,
-   S,
-   AnB1
-);
-or(Cout,AnB1,AnB2);
+    wire AxB, AnB, AnB1, AnB2;  // Ara sinyaller
 
+    // İlk Half Adder (A + B)
+    halfAdder h0 (
+        .A(A),
+        .B(B),
+        .S(AxB),
+        .Cout(AnB2)
+    );
+
+    // İkinci Half Adder (AxB + Cin)
+    halfAdder h1 (
+        .A(AxB),
+        .B(Cin),
+        .S(S),
+        .Cout(AnB1)
+    );
+
+    // Taşıma çıkışı
+    or(Cout, AnB1, AnB2);  // Taşıma çıkışı
 endmodule

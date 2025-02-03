@@ -1,0 +1,167 @@
+$date
+	Mon Feb  3 21:17:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mult2bitTB $end
+$var wire 4 ! result [3:0] $end
+$var reg 2 " num1 [1:0] $end
+$var reg 2 # num2 [1:0] $end
+$scope module uut $end
+$var wire 2 $ num1 [1:0] $end
+$var wire 2 % num2 [1:0] $end
+$var wire 4 & result [3:0] $end
+$var wire 2 ' partial2 [1:0] $end
+$var wire 2 ( partial1 [1:0] $end
+$var wire 1 ) carry2 $end
+$var wire 1 * carry1 $end
+$scope module fa1 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 ) Cout $end
+$var wire 1 - S $end
+$var wire 1 * Cin $end
+$var wire 1 . AxB $end
+$var wire 1 / AnB2 $end
+$var wire 1 0 AnB1 $end
+$scope module h0 $end
+$var wire 1 + A $end
+$var wire 1 , B $end
+$var wire 1 / Cout $end
+$var wire 1 . S $end
+$upscope $end
+$scope module h1 $end
+$var wire 1 + A $end
+$var wire 1 0 Cout $end
+$var wire 1 - S $end
+$var wire 1 * B $end
+$upscope $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 1 A $end
+$var wire 1 2 B $end
+$var wire 1 ) Cin $end
+$var wire 1 3 Cout $end
+$var wire 1 4 S $end
+$var wire 1 5 AxB $end
+$var wire 1 6 AnB2 $end
+$var wire 1 7 AnB1 $end
+$scope module h0 $end
+$var wire 1 1 A $end
+$var wire 1 2 B $end
+$var wire 1 6 Cout $end
+$var wire 1 5 S $end
+$upscope $end
+$scope module h1 $end
+$var wire 1 1 A $end
+$var wire 1 ) B $end
+$var wire 1 7 Cout $end
+$var wire 1 4 S $end
+$upscope $end
+$upscope $end
+$scope module ha1 $end
+$var wire 1 8 A $end
+$var wire 1 9 B $end
+$var wire 1 * Cout $end
+$var wire 1 : S $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 &
+1:
+18
+b1 (
+b1 #
+b1 %
+b1 "
+b1 $
+#20
+0:
+1.
+b10 !
+b10 &
+1-
+08
+1+
+b10 (
+b10 "
+b10 $
+#30
+0-
+b1 !
+b1 &
+1:
+0+
+1,
+19
+b0 (
+b11 '
+b10 #
+b10 %
+b11 "
+b11 $
+#40
+0.
+0,
+b1 '
+b1 "
+b1 $
+#50
+14
+10
+1)
+0:
+1*
+b100 !
+b100 &
+0-
+1/
+18
+1+
+1,
+b11 (
+b11 '
+b11 #
+b11 %
+b11 "
+b11 $
+#60
